@@ -1,0 +1,16 @@
+.assetType-table {
+    .ant-table-footer {
+      .assetType-pagination {
+          display: flex;
+          justify-content: end;
+      }
+    }
+  }
+  .assetType-card{
+    min-height: calc(100vh - 245px);
+  }
+  .mobile-assetType-pagination{
+    display: flex;
+    justify-content: end;
+    background: #fafafa;
+  }

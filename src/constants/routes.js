@@ -1,0 +1,10 @@
+export const DASHBOARD = "/dashboard";
+export const LOGIN = "/";
+export const SIGN_UP = "/sign-up";
+export const FORGOT_PASSWORD = "/forgot-password";
+export const CAMPAIGN_SCREEN = "/campaigns";
+export const CAMPAIGN_DASHBOARD="/campaign-dashboard";
+export const CHANGE_DEFAULT_PASSWORD = '/change-default-password';
+export const CAMPAIGN_USERS = "/campaign-users";
+export const REPORTS_SCREEN = "/reports";
+export const PRESET_SCREEN = "/preset-management";

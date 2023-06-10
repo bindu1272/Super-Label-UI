@@ -1,0 +1,153 @@
+@import "../../styles/variables/colors";
+@import "../../styles/variables/mixins";
+
+.main-header {
+  width: 100%;
+  height: 100%;
+
+  &.ant-layout-header {
+    background-color: white !important;
+    //box-shadow: 0px 5px 10px rgb(240, 240, 240);
+    padding: 0 !important;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    height: 64px !important;
+  }
+
+  .header-items {
+    padding: 0px 25px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    .app-title {
+      &.ant-typography {
+        margin: 0 !important;
+      }
+    }
+
+    .profile {
+      margin-left: auto;
+      text-decoration: none;
+    }
+  }
+}
+
+.profile-dropdown-style {
+  width: 300px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 10px;
+  margin-top: 8px;
+
+  .user-details {
+    margin-left: 15px;
+
+    .username {
+      &.ant-typography {
+        margin: 0 !important;
+        width: 200px;
+      }
+    }
+  }
+}
+
+.logout-btn {
+  &:hover {
+    background-color: $theme-danger;
+  }
+}
+
+.sidenav {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  @include mobile {
+    position: fixed !important;
+    height: 100%;
+    z-index: 9999;
+    top: 64px;
+    transition: all 0.5s ease-in-out;
+    left: -100%;
+    width: 224px !important;
+    min-width: 224px !important;
+
+    &.menu-close {
+      left: 0;
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .ant-layout-sider-children {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid silver;
+
+    @include mobile {
+      justify-content: start;
+    }
+  }
+
+  .sidemenu {
+    &.ant-menu {
+      border: 0px !important;
+      width: 64px;
+      margin-top: 10% !important;
+
+      @include mobile {
+        width: 205px;
+      }
+    }
+
+    .ant-menu-item {
+      margin-bottom: 20px;
+    }
+
+    .ant-menu-title-content {
+      display: none !important;
+    }
+
+    .anticon {
+      font-size: 20px;
+    }
+  }
+}
+
+.mobile-toggle-button {
+  display: none;
+  padding: 0;
+  margin-right: 20px;
+  border: none;
+  background: 0;
+
+  &:hover {
+    color: $black !important;
+  }
+
+  .anticon {
+    font-size: 16px;
+  }
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+  @include mobile{
+    display: none;
+  }
+}

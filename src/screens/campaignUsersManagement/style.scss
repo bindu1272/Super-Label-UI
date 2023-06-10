@@ -1,0 +1,39 @@
+.asset-management-page {
+  padding: 10px 20px;
+  max-height: calc(100vh - 64px);
+  overflow-y: scroll;
+  .header {
+    margin-top: 10px;
+    display: flex;
+    .right-section {
+      margin-left: auto;
+    }
+  }
+  .page-title {
+    &.ant-typography {
+      margin: 0 !important;
+    }
+  }
+  .asset-management-table {
+    margin-top: 30px;
+  }
+}
+
+.create-asset-page {
+  .form {
+    .metadata-field-container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .metadata-field {
+      .ant-row {
+        margin: 0 !important;
+      }
+      padding: 20px;
+      border-radius: 4px;
+      background-color: rgb(245, 245, 245);
+    }
+  }
+}

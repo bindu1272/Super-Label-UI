@@ -1,0 +1,23 @@
+.status-tag {
+    border-radius: 15px !important;
+    width: 120px !important;
+    text-align: center;
+    border: none !important;
+    padding: 4px 12px !important;
+  }
+  .status-tag {
+    position: relative; /* Set the parent container to relative positioning */
+  }
+  
+  .hover-text {
+    position: absolute; 
+    top: -100%; 
+    left: 0; 
+    opacity: 0; 
+    background-color: yellow;
+    color: black;
+  }
+  
+  .status-tag:hover .hover-text {
+    opacity: 1; 
+  }

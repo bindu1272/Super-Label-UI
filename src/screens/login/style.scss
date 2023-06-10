@@ -1,0 +1,73 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/mixins';
+
+.login-container {
+    .left-container {
+        min-height: 100vh;
+        background-color: $theme-primary;
+        padding: 50px;
+        .left-logo{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .login-img{
+            width: 600px;
+            margin-left: auto;
+            img{
+                width: 600px;
+            }
+            @include tablet{
+                width: 390px;
+                img{
+                    width: 390px;
+                }
+            }
+            @include mobile{
+                width: 300px;
+                img{
+                    width: 300px;
+                }
+            }
+        }
+        @include mobile{
+            min-height: 75vh;
+        }
+        .title1 {
+            font-size: 40px;
+            line-height: 54px;
+            color: $white;
+            margin-top: 20px;
+            margin-bottom: 24px;
+            @include mobile{
+                font-size: 24px;
+                line-height: 40px;
+            }
+          }
+    }
+    .login-form {
+        padding-top: 5%;
+        padding-left: 100px;
+        padding-right: 100px;
+        .title{
+            margin-top: 10px;
+        }
+        @include tablet{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @include mobile{
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .forgot-pwd-btn {
+            margin-bottom: 10px;
+        }
+        .signup-btn {
+            display: flex;
+            justify-content: center;
+            margin-left: auto;
+        }
+    }
+}

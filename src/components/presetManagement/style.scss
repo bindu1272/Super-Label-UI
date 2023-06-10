@@ -1,0 +1,17 @@
+@import "../../styles/variables/mixins";
+.assetType-table {
+  .ant-table-content{
+      min-height: calc(100vh - 230px);
+      overflow: auto;
+  @include mobile{
+    min-height: calc(100vh - 245px);
+  }
+  }
+    .ant-table-footer {
+      .assetType-pagination {
+          display: flex;
+          justify-content: end;
+      }
+    }
+  }
+  

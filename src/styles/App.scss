@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+// variables
+@import './variables/colors';
+@import './variables/mixins';
+
+// custom css
+* {
+  font-family: 'Lato', sans-serif !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  // height: 100%;
+}
+
+.app-container {
+  // position: relative;
+  // height: 100%;
+  height: 100vh;
+  // overflow-x: hidden;
+
+  overflow-x: hidden;
+}
+
+.app-router {
+  height: 100vh;
+}
+// Typography Style
+.title1,
+.title2,
+.title3,
+.title4,
+.title5,
+.title6 {
+  margin: 0;
+}
+
+.title1 {
+  font-size: 2rem;
+  line-height: 39px;
+  font-weight: bold;
+}
+
+.title2 {
+  font-size: 1.75rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title3 {
+  font-size: 1.5rem;
+  line-height: 32px;
+  font-weight: 600;
+
+  // On mobile
+  @include mobile {
+    font-size: 1.3rem;
+  }
+}
+
+.title4 {
+  font-size: 1.3rem;
+  line-height: 39px;
+  font-weight: 600;
+}
+
+.title5 {
+  font-size: 1rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.title6 {
+  font-size: 0.875rem;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.screen-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+.small {
+  font-size: 12px;
+}
+.small-grey {
+  font-size: 12px;
+  color: #a7a7a7;
+}
+.x-small-grey {
+  font-size: 10px;
+  color: #a7a7a7;
+}
+.medium-grey {
+  font-size: 14px;
+  color: #a7a7a7;
+}
+.medium-grey-bold {
+  font-size: 14px;
+  color: #a7a7a7;
+  font-weight: 600;
+}
+.appointment-action-icon {
+  width: 14px;
+  margin-bottom: 4px;
+}
+.purple-highlight {
+  font-size: 12px;
+  color: #532eb3;
+}
+.green-highlight {
+  font-size: 12px;
+  color: #27ae60;
+}
+.red-highlight {
+  font-size: 12px;
+  color: #eb5757;
+}
+.orange-highlight {
+  font-size: 12px;
+  color: #f39c12;
+}
+.medium-bold {
+  font-size: 15px;
+  font-weight: 600;
+  color: #25282b !important;
+}
+.medium-icon {
+  font-size: 16px !important;
+}
+.small-bold {
+  font-size: 12px;
+  font-weight: 600;
+}
+.medium {
+  font-size: 14px;
+}
+.large {
+  font-size: 20px;
+}
+.large-bold {
+  font-size: 20px;
+  font-weight: 700;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.text-danger {
+  color: $theme-danger !important;
+}
+.main-content {
+  background-color: white !important;
+}
+
+.loading {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.ant-drawer{
+  @include mobile{
+    .ant-drawer-content-wrapper{
+      width: 100% !important;
+    }
+  }
+}
